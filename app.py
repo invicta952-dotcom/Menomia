@@ -9,7 +9,7 @@ def index():
 @app.route('/meme')  # This must match what you typed in the browser
 def get_meme():
     # Your logic to get the meme using memeflask.py
-    return render_template('meme_index.html') 
+    return render_template('meme_index.html', meme_image=meme_url) 
 
 
 if __name__ == "__main__":
