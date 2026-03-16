@@ -11,12 +11,4 @@ def get_meme():
     subreddit= response["subreddit"]
     return meme_large, subreddit
 
-@app.route("/")
-def home():
-     return render_template("main.html")
 
-
-@app.route("/meme")
-def index():
-     meme_pic,subreddit = get_meme()
-     return render_template("meme_index.html", meme_pic=meme_pic, subreddit=subreddit)
