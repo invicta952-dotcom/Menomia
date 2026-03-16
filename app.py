@@ -3,11 +3,11 @@ import requests
 import memeflask
 app = Flask(__name__)
 @app.route("/")
-def index():
+def home():
     return render_template('main.html')
 
 @app.route("/meme")
-def meme():
+def index():
     return render_template('meme_index.html)
 
 if __name__ == "__main__":
