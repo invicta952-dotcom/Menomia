@@ -9,8 +9,3 @@ def home():
 @app.route("/meme") 
 def index():
     return render_template('meme_index.html', meme_image=meme_url) 
-
-
-if __name__ == "__main__":
-    app.run()
-
