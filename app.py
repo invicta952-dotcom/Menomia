@@ -9,6 +9,7 @@ def home():
 
 @app.route("/meme")
 def index():
+    meme_pic, subreddit = memeflask.get_meme()
     return render_template("meme_index.html", meme_pic=meme_pic, subreddit=subreddit)
 
 
