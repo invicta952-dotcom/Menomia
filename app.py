@@ -3,6 +3,6 @@ import memeflask
 app = Flask(__name__)
 @app.route("/")
 def index():
-    return "main.html"
+    return "index.html"
 
 
