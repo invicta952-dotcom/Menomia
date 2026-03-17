@@ -1,7 +1,8 @@
 from flask import Flask
+import memeflask
 app = Flask(__name__)
 @app.route("/")
 def index():
-    return "DRINK MORE MONSTERS"
+    return "main.html"
 
 
