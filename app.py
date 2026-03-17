@@ -12,4 +12,6 @@ def index():
     meme_pic, subreddit = memeflask.get_meme()
     return render_template("meme_index.html", meme_pic=meme_pic, subreddit=subreddit)
 
-
+@app.route("/about")
+def menu():
+    return render_template("about.html")
