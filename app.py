@@ -9,6 +9,6 @@ def home():
 
 @app.route("/meme")
 def index():
-    return render_template("meme_index.html", meme_pic=meme_pic)
+    return render_template("meme_index.html", meme_pic=meme_pic, subreddit=subreddit)
 
 
