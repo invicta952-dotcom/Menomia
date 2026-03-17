@@ -7,4 +7,8 @@ app = Flask(__name__)
 def index():
     return render_template("main.html")
 
+@app.route("/meme")
+def index():
+    return render_template("meme_index.html")
+
 
